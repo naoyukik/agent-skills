@@ -1,5 +1,5 @@
 ---
-name: Clean Up Stale Inline Review Notes
+name: clean-up-stale-inline-review-notes
 description: Use this when you are instructed to delete an "Inline Review Notes" file.
 metadata:
   version: "1.0"

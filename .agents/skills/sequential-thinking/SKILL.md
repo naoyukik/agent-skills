@@ -5,7 +5,7 @@ metadata:
   version: "1.0"
 ---
 
-## "sequential-thinking" as "think" tool
+## "sequential-thinking" as a "think" tool
 
 ### When to use the think tool
 

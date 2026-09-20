@@ -5,7 +5,7 @@ metadata:
   version: "1.0"
 ---
 
-# Operating Git - Procedure & Examples
+# Operating Git – Procedure & Examples
 
 本スキルは、Git 操作の具体的な手順と、ミスを防ぐための確認フローを提供する。基本的な行動原則（git add . の禁止等）については `AGENTS.md` を最優先で遵守せよ。
 

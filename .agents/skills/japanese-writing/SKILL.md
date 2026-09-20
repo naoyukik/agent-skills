@@ -1,5 +1,5 @@
 ---
-name: Japanese writing
+name: japanese-writing
 description: Write clear, natural Japanese for long-form writing, pull requests, review comments, and plans by structuring information into readable cognitive units, using precise sentence structure, minimal punctuation, meaningful spacing, and natural rhythm for screen reading.
 metadata:
   version: "1.0"

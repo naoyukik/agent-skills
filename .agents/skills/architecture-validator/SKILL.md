@@ -40,6 +40,6 @@ Every `unsafe` block MUST be preceded by a `// SAFETY:` comment.
 
 Output a "Violation Report" structured as follows:
 
-### [Severity] Rule Name - File:Line
+### [Severity] Rule Name – File:Line
 - **Context**: Describe why this violates the architecture.
 - **Required Action**: Concrete step to fix the isolation.

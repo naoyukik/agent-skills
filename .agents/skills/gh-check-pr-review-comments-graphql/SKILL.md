@@ -1,5 +1,5 @@
 ---
-name: check-pr-review-comments-graphql
+name: gh-check-pr-review-comments-graphql
 description: Analyzing GitHub Pull Request review comments and managing follow-up tasks. This skill utilizes GraphQL to efficiently fetch review comments and categorizes them into critical fixes, future improvements, or out-of-scope items. Mandatory when a PR has received feedback to systematically address reviewer suggestions and ensure all necessary changes are tracked in Conductor.
 metadata:
   version: "1.0"

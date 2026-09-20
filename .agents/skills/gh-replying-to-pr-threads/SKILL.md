@@ -1,5 +1,5 @@
 ---
-name: replying-to-pr-threads
+name: gh-replying-to-pr-threads
 description: Replies to specific GitHub Pull Request review threads using GraphQL API. Use when addressing individual review comments.
 metadata:
   version: "1.0"

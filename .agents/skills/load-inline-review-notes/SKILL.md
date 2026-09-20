@@ -1,5 +1,5 @@
 ---
-name: Load Inline Review Notes
+name: load-inline-review-notes
 description: Use this when a user instructs you to retrieve comments from Inline Review Notes.
 metadata:
   version: "1.0"

@@ -1,8 +1,8 @@
 # Evidence Report Template (Pre-Implementation)
 
-`autonomous-researcher` の Phase 1-4 を完了した後に提出する実装前レポートのテンプレートである。
+`autonomous-researcher` の Step 1-4 を完了した後に提出する実装前レポートのテンプレートである。
 
-## 1. Discovery Summary (Phase 1)
+## 1. Discovery Summary (Step 1)
 
 - **[Problem Statement]**:
 - **[Scope]**:
@@ -10,7 +10,7 @@
 - **[Constraints]**:
 - **[Success Criteria]**:
 
-## 2. Codebase Findings (Phase 2)
+## 2. Codebase Findings (Step 2)
 
 - **[Similar Implementations]**:
   - `[path/to/file.ext:line]`:
@@ -18,7 +18,7 @@
 - **[Reusable Components]**:
 - **[Estimated Impact Area]**:
 
-## 3. Clarifying Questions (Phase 3)
+## 3. Clarifying Questions (Step 3)
 
 - **[Open Questions]**:
   1. ...
@@ -30,7 +30,7 @@
 本調査結果に基づき、将来的な修正（実装トラック）において実現すべき挙動を定義する。
 （例：正常系のフォーカス制御、異常系のクリーンアップ手順など）
 
-## 5. Architecture Options (Phase 4)
+## 5. Architecture Options (Step 4)
 
 ### Option A: Minimal Changes
 - **[Change Targets]**:

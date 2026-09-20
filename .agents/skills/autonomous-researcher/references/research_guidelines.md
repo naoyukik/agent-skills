@@ -1,8 +1,8 @@
-# リサーチガイドライン (Phase 1-4 対応)
+# リサーチガイドライン (Step 1-4 対応)
 
 `autonomous-researcher` の実装前調査フェーズで使用する実務チェックリストである。
 
-## Phase 1: Discovery
+## Step 1: Discovery
 
 ### 収集項目
 - 何を解決する要求か（現状の痛み）
@@ -19,7 +19,7 @@
 - 調査段階で実装仕様（spec）を定義しようとしてしまう
 - 非スコープが未定義で作業範囲が拡散する
 
-## Phase 2: Codebase Exploration
+## Step 2: Codebase Exploration
 
 ### 推奨ツール
 - **JetBrains MCP**:
@@ -39,7 +39,7 @@
 - 再利用可能コンポーネント一覧
 - 変更影響範囲
 
-## Phase 3: Clarifying Questions
+## Step 3: Clarifying Questions
 
 ### 質問カテゴリ
 - エッジケース
@@ -52,7 +52,7 @@
 - 質問は番号付きで提示する
 - 回答または明示委任が得られるまで次フェーズへ進まない
 
-## Phase 4: Architecture Design
+## Step 4: Architecture Design
 
 ### 必須比較軸
 - 実装コスト

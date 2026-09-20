@@ -1,5 +1,5 @@
 ---
-name: gh-create-draft-pr
+name: github-create-draft-pr
 description: Facilitating the creation of Draft Pull Requests on GitHub using the GitHub CLI (gh). This skill guides the collection of branch diffs, issue context via GraphQL, and the generation of structured PR titles and bodies in Japanese. Mandatory when the current task is ready for review as a draft to ensure all necessary context and issue links are included.
 metadata:
   version: "1.0"

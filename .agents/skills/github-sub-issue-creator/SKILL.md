@@ -1,5 +1,5 @@
 ---
-name: gh-sub-issue-creator
+name: github-sub-issue-creator
 description: Handles the creation of GitHub Sub-issues. Use this skill when you need to add existing issues as sub-issues to a parent Epic/Issue. It provides the correct usage of the `sub_issue_write` tool and fallback procedures using GitHub CLI (`gh api`) if the tool fails.
 metadata:
   version: "1.0"

@@ -1,8 +1,8 @@
 ---
 name: referencing-commit-convention
-description: コミットメッセージの型 (type) 定義と具体例。基本フォーマットは AGENTS.md を参照せよ。
+description: Definitions and examples of commit message types. 
 metadata:
-  version: "1.0"
+  version: "1.1"
 ---
 
 # Commit Convention - Type Definitions

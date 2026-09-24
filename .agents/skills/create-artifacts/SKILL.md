@@ -1,6 +1,8 @@
 ---
 name: create-artifacts
 description: Creates a single-file HTML artifact from user-provided content by orchestrating web-artifacts-builder (React 19 + TypeScript + Vite + Tailwind CSS v4 + shadcn/ui scaffolding and bundling) and modern-web-guidance (up-to-date web best practices). Use when asked to build a claude.ai-style artifact, a demo page, an interactive single-file HTML app, or a UI from a natural-language description.
+metadata:
+  version: "1.0"
 ---
 
 # create-artifacts

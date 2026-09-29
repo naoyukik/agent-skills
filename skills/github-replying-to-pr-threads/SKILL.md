@@ -26,6 +26,11 @@ gh api graphql -f query='
     addPullRequestReviewThreadReply(input: {pullRequestReviewThreadId: $threadId, body: $body}) {
       comment { url }
     }
-  }' -f threadId='<THREAD_ID>' -f body='<BODY>\n\nCommented by Gemini CLI'
+  }' -f threadId='<THREAD_ID>' -f body='<BODY>\n\n:robot: Commented by {AI}'
 ```
 2. **結果確認**: `run_shell_command` の実行結果（例: `{"data":{"addPullRequestReviewThreadReply":{"comment":{"url":"..."}}}}`）から、投稿が成功したかを確認する。
+
+## 署名プロトコル
+
+本文の最後に必ず署名 `:robot: Commented by {AI}` を追加すること。署名は本文と改行で区切る（上記例のとおり、`<BODY>` の直後に空行を挟んで署名を付与する）。
+`{AI}` は**置換用プレースホルダー**である。実行時に、実際に投稿する AI の名前（例: `Codex`）へ置換してから投稿すること。プレースホルダーのまま投稿しないこと。

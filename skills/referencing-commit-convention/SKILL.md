@@ -1,8 +1,8 @@
 ---
 name: referencing-commit-convention
-description: Definitions and examples of commit message types. 
+description: Definitions and examples of commit message types. Be sure to refer to this when writing Git commit messages.
 metadata:
-  version: "1.1"
+  version: "1.2"
 ---
 
 # Commit Convention - Type Definitions

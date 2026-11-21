@@ -8,9 +8,9 @@ Herdr ワーカーとして起動した OpenCode セッションで、使用す�
 - ビルトインは `build`, `plan`, `general`, `explore` の4つだけだ。`review` というビルトインは存在しない
 - エージェントの選択はセッション単位で保持される。`default_agent` を変更しても既存セッションのエージェントは置き換わらない
 
-## 恒常ワーカーのエージェントを切り替える
+## 恒常ワーカーのエージェントとモデルを切り替える
 
-`opencode run --agent <agent> "<prompt>"` は一回限りの実行であり、常設ワーカーには使えない。既存セッションに対して `session.switchAgent` API を呼び出す。
+`opencode run --agent <agent> "<prompt>"` は一回限りの実行であり、常設ワーカーには使えない。既存セッションに対して `session.switchAgent` API と `session.switchModel` API を呼び出す。
 
 1. ワーカーに一度プロンプトを送り、セッションを作成する。OpenCode は最初の入力を受けるまでセッションを作らない。
 
@@ -34,11 +34,21 @@ Herdr ワーカーとして起動した OpenCode セッションで、使用す�
 
    成功時は出力なし（HTTP 204）。
 
-4. 結果を確認する。
+4. モデルも切り替える。`session.switchAgent` はエージェント定義内の `model:` を適用しない。エージェント定義のモデルは TUI のクライアント側でのみ解決され、API 経路では無視される。そのためエージェントとモデルは必ず2回の API 呼び出しで切り替える。
 
    ```bash
-   opencode api session.list | jq -r '.data[] | select(.id == "<session-id>") | [.id, .agent] | @tsv'
+   opencode api session.switchModel --param sessionID=<session-id> --data '{"model":{"id":"<model-id>","providerID":"<provider-id>","variant":"<variant>"}}'
    ```
+
+   例: `{"model":{"id":"kimi-k3.1-pro","providerID":"opencode-go","variant":"high"}}`。`variant` は省略できる。
+
+5. 結果を確認する。
+
+   ```bash
+   opencode api session.list | jq -r '.data[] | select(.id == "<session-id>") | [.id, .agent, .model.id, .model.providerID, (.model.variant // "default")] | @tsv'
+   ```
+
+   ワーカーのペイン下端のステータス行に `<agent> · <model>` が表示されるので、目視確認にも使える。
 
 ## 一回限りの実行
 
